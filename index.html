@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Train Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            width: 50%;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="date"], select {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            width: 100%;
+            height: 40px;
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <h1>Train Booking</h1>
+    <form>
+        <label for="from">From:</label>
+        <input type="text" id="from" name="from" required>
+
+        <label for="to">To:</label>
+        <input type="text" id="to" name="to" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="class">Class:</label>
+        <select id="class" name="class">
+            <option value="1st AC">1st AC</option>
+            <option value="2nd AC">2nd AC</option>
+            <option value="3rd AC">3rd AC</option>
+            <option value="Sleeper">Sleeper</option>
+            <option value="General">General</option>
+        </select>
+
+        <label for="quota">Quota:</label>
+        <select id="quota" name="quota">
+            <option value="General">General</option>
+            <option value="Tatkal">Tatkal</option>
+            <option value="Ladies">Ladies</option>
+            <option value="Senior Citizen">Senior Citizen</option>
+        </select>
+
+        <input type="submit" value="Book Now">
+    </form>
+</body>
+</html>
+
+
